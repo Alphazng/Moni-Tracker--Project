@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" style="-fx-background-color: EAFDFC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddTransactionSceneController">
+   <children>
+      <Circle fill="#bfeaf5" layoutY="525.0" radius="75.0" stroke="#bfeaf5" strokeType="INSIDE" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="124.0" text="Add Transaction" textAlignment="CENTER" textFill="#82aae3" underline="true">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <Circle fill="#bfeaf5" layoutX="75.0" layoutY="600.0" radius="75.0" stroke="#bfeaf5" strokeType="INSIDE" />
+      <Circle fill="#bfeaf5" layoutX="285.0" radius="75.0" stroke="#bfeaf5" strokeType="INSIDE" />
+      <Circle fill="#bfeaf5" layoutX="360.0" layoutY="74.0" radius="75.0" stroke="#bfeaf5" strokeType="INSIDE" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="176.0" text="Choose Wallet" textFill="#82aae3">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cbChooseWallet" layoutX="69.0" layoutY="208.0" prefHeight="26.0" prefWidth="222.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN">
+               <color>
+                  <Color red="0.5098039507865906" green="0.6666666865348816" blue="0.8901960849761963" />
+               </color>
+            </InnerShadow>
+         </effect></ChoiceBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="256.0" text="Transaction Value" textFill="#82aae3">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="432.0" mnemonicParsing="false" onAction="#expenseBtn" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: #82AAE3; -fx-background-radius: 50;" text="Expense" textAlignment="CENTER" textFill="#eafdfc">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.9176470637321472" green="0.9921568632125854" blue="0.9882352948188782" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="tfTransactionValue" layoutX="69.0" layoutY="293.0" prefHeight="26.0" prefWidth="222.0" style="-fx-background-radius: 10;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN">
+               <color>
+                  <Color red="0.9176470637321472" green="0.9921568632125854" blue="0.9882352948188782" />
+               </color>
+            </InnerShadow>
+         </effect></TextField>
+      <TextField fx:id="tfTransactionCategory" layoutX="69.0" layoutY="376.0" prefHeight="26.0" prefWidth="222.0" style="-fx-background-radius: 10;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN">
+               <color>
+                  <Color red="0.9176470637321472" green="0.9921568632125854" blue="0.9882352948188782" />
+               </color>
+            </InnerShadow>
+         </effect></TextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="96.0" layoutY="339.0" text="Transaction Category" textFill="#82aae3">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="432.0" mnemonicParsing="false" onAction="#incomeBtn" prefHeight="36.0" prefWidth="110.0" style="-fx-background-color: #91D8E4; -fx-background-radius: 50;" text="Income" textAlignment="CENTER" textFill="#eafdfc">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.9176470637321472" green="0.9921568632125854" blue="0.9882352948188782" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="41.0" fitWidth="150.0" layoutX="22.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Group%2011.png" />
+         </image>
+      </ImageView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="540.0" mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="38.0" prefWidth="165.0" style="-fx-background-color: #82AAE3; -fx-background-radius: 50;" text="Back" textAlignment="CENTER" textFill="#eafdfc">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN">
+               <color>
+                  <Color red="0.7490196228027344" green="0.9176470637321472" blue="0.9607843160629272" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
